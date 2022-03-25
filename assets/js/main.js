@@ -34,7 +34,9 @@ function() {
 annulla.addEventListener('click', 
     
 function() {
-    km.value = "";
     window.location.reload();
 }
 )
+
+console.log(km.value)
+console.log(costo_biglietto)
