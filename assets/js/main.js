@@ -1,4 +1,8 @@
 
+document.querySelector('.carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;
+
+document.querySelector('.CP').innerHTML = Math.floor(Math.random() * 10000) + 1;
+
 const km = document.querySelector('.km');
 
 const eta = document.querySelector('.eta');
@@ -37,6 +41,8 @@ function() {
     window.location.reload();
 }
 )
+
+
 
 console.log(km.value)
 console.log(costo_biglietto)
