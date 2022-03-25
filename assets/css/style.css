@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#all_content{
+    background-color: brown;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+.form_container,
+.ticket_container
+{
+    background-color: white;
+    padding: 1rem;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.buttons{
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.information{
+    display: flex;
+}
+.passenger_info{
+    width: 25%;
+    background-color: grey;
+}
+
+.price_info{
+    display: flex;
+    width: 100%;
+}
+
+.price_info>*{
+    flex-basis: 25%;
+    border: 1px solid black;
+}
