@@ -19,15 +19,19 @@ let price = document.querySelector('.price');
 
 let discount = document.querySelector(".discount");
 
+let carrozza = document.querySelector('.carrozza')
+
+let CP = document.querySelector('.CP')
+
 
 genera.addEventListener('click', 
     
 function() {
     costo_biglietto = km.value * prezzo_al_km;
     
-    document.querySelector('.carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;
+    carrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
 
-    document.querySelector('.CP').innerHTML = Math.floor(Math.random() * 10000) + 1;
+    CP.innerHTML = Math.floor(Math.random() * 10000) + 1;
 
     if (eta.value == 'minorenne'){
         costo_biglietto *= (1 - sconto_under_18);
@@ -52,6 +56,10 @@ annulla.addEventListener('click',
 function() {
     km.value = ''
     eta.value = 'minorenne'
+    discount.innerHTML = ""
+    carrozza.innerHTML = ""
+    CP.innerHTML = ""
+    price.innerHTML = ""
 }
 )
 
