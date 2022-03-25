@@ -24,8 +24,6 @@ genera.addEventListener('click',
     
 function() {
     costo_biglietto = km.value * prezzo_al_km;
-
-    price.innerHTML = costo_biglietto.toFixed(2);
     
     document.querySelector('.carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;
 
@@ -44,6 +42,7 @@ function() {
         discount.innerHTML = "Non sono stati applicati sconti"
     }
 
+    price.innerHTML = costo_biglietto.toFixed(2);
 
 }
 )
