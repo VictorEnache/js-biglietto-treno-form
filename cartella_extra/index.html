@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all_content">
+        <div class="calc_price">
+            <div class="container">
+                <h2>
+                    calcola il prezzo del tuo biglietto
+                </h2>
+                <form class="values">
+                    <div class="inputs d_flex">
+                        <div class="nome_cognome">
+                            <label for="name">Nome Cognome</label>
+                            <input id="name" type="text">
+                        </div>
+                        <div class="km_da_percorrere">
+                            <label for="km">Km da percorrere</label>
+                            <input id="km" type="text">
+                        </div>
+                        <div class="fascia_di_eta">
+                            <label for="eta"> Fascia d'età</label>
+                            <select name="eta" id="eta">
+                                <option value="18_plus">18 - 65 anni</option>
+                                <option value="underage">Minorenne</option>
+                                <option value="over_65"> Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- /.inputs -->
+                    <div class="buttons d_flex">
+                        <button id="genera" type="button">Genera</button>
+                        <button id="annulla" type="reset"> Annulla</button>
+                    </div>
+                    <!-- /.buttons -->
+                </form>
+                <!-- /.values -->
+                <h2>il tuo biglietto</h2>
+                <div class="ticket">
+                    <h3>dettaglio passeggeri</h3>
+                    <div class="ticket_details d_flex">
+                        <div class="passenger_name">
+                            <div>NOME PASSEGGERO</div>
+                            <div class="personal_name">.............</div>
+                        </div>
+                        <div class="trip_properties d_flex">
+                            <div class="properties d_flex">
+                                <span class="discount">Offerta</span>
+                                <span class="carriage">Carrozza</span>
+                                <span class="cp_code">Codice CP</span>
+                                <span class="price">Costo biglietto</span>
+                            </div>
+                            <div class="properties_numbers d_flex">
+                                <span class="discount_number">xx</span>
+                                <span class="carriage_number">xx</span>
+                                <span class="cp_code_number">xx</span>
+                                <span class="price_number">xx</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.ticket_details -->
+                </div>
+                <!-- /.ticket -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.calc_price -->
+    </div>
+    <!-- /.all_content -->
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
